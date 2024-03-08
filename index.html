@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="top" id="search-area">
+            <div class="location">
+                <img src="./images/location.png" alt="" srcset="" onclick="show_weather()">
+            </div>
+            <input type="text" name="city" id="cityname" placeholder="Enter city name">
+            <div class="search-button">
+                <img src="./images/search.png" alt="" srcset="" onclick="show_weather_sb()">
+            </div>
+        </div>
+        <div class="middle" id="show">
+            <div class="image">
+                <img id="image" src="./images/weather-symbol-default.jpg" alt="" srcset="">
+            </div>
+            <div class="temp">
+                <h1 id="temp">------</h1>
+                <h2 id="cty">_-_-_-_</h2>
+            </div>
+        </div>
+        <div class="bottom" id="fetaures">
+            <div class="humid" id="humid-metric">
+                <div class="col1">
+                    <img src="./images/humidity.png" alt="" srcset="">
+                </div>
+                <div class="col2">
+                    <div id="col2">----</div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind" id="wind-speed">
+                <div class="col3">
+                    <img src="./images/wind.png" alt="" srcset="">
+                </div>
+                <div class="col4">
+                    <div id="col4">----</div>
+                    km/hr
+                    <br>Wind <br>Speed
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
